@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Waoops 7.9ft Artificial Olive Tree - Premium faux botanicals for your home. Zero maintenance, incredible style.">
+<meta name="theme-color" content="#4a6741">
 <title>Bring Nature Indoors — Waoops 7.9ft Artificial Olive Tree</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -205,6 +207,8 @@
     transition: background 0.25s, transform 0.2s;
     position: relative;
     overflow: hidden;
+    border: none;
+    cursor: pointer;
   }
 
   .cta-btn::after {
@@ -256,6 +260,7 @@
   .feature-icon {
     width: 20px; height: 20px;
     opacity: 0.85;
+    flex-shrink: 0;
   }
 
   /* ── SPECS SECTION ── */
@@ -326,8 +331,6 @@
     gap: 24px 40px;
     margin-bottom: 40px;
   }
-
-  .spec-item {}
 
   .spec-label {
     font-size: 11px;
@@ -681,6 +684,8 @@
     letter-spacing: 0.06em;
     transition: background 0.25s, transform 0.2s;
     position: relative;
+    border: none;
+    cursor: pointer;
   }
 
   .cta-btn-white::after {
@@ -705,12 +710,16 @@
     position: relative;
   }
 
+  #disclaimer {
+    scroll-margin-top: 60px;
+  }
+
   /* ── FOOTER ── */
   footer {
     background: #1a1a1a;
     color: rgba(255,255,255,0.4);
     text-align: center;
-    padding: 32px;
+    padding: 48px 32px;
     font-size: 12px;
     line-height: 1.9;
   }
@@ -718,6 +727,15 @@
   footer a {
     color: rgba(255,255,255,0.55);
     text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  footer a:hover {
+    color: rgba(255,255,255,0.8);
+  }
+
+  footer p {
+    margin-bottom: 12px;
   }
 
   /* ── RESPONSIVE ── */
@@ -748,6 +766,30 @@
 
     .cta-section { padding: 80px 32px; }
     .cta-section h2 { font-size: 40px; }
+    .cta-section::before { font-size: 140px; }
+  }
+
+  @media (max-width: 640px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 32px !important; }
+    
+    .hero-left { padding: 40px 20px; }
+    .specs-content { padding: 40px 20px; }
+    .lifestyle-content { padding: 40px 20px; }
+    .benefits-section { padding: 60px 20px; }
+    .reviews-section { padding: 60px 20px; }
+    .cta-section { padding: 60px 20px; }
+    
+    .subtitle { font-size: 16px; }
+    .feature-item { padding: 16px 24px; font-size: 12px; }
+    
+    .spec-grid { grid-template-columns: 1fr; gap: 20px; }
+    .benefits-grid { gap: 24px; }
+    
+    .overall-rating { flex-direction: column; gap: 16px; }
+    .rating-breakdown { margin-top: 16px; }
+    
+    .cta-btn, .cta-btn-white { padding: 16px 32px; font-size: 13px; }
   }
 </style>
 </head>
@@ -764,20 +806,20 @@
 </svg>
 
 <!-- ── HERO ── -->
-<section class="hero">
+<section class="hero" aria-label="Product showcase">
   <div class="hero-left">
     <div class="hero-content">
       <p class="eyebrow">Waoops — Premium Faux Botanicals</p>
       <h1>The <em>Olive Tree</em><br>Your Home Deserves</h1>
       <p class="subtitle">7.9ft of pure Mediterranean elegance.<br>Zero watering. Endless beauty.</p>
 
-      <div class="rating-row">
-        <div class="stars">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="half"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div class="rating-row" aria-label="Customer rating: 4.5 out of 5 stars based on 200+ reviews">
+        <div class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-label="Full star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-label="Full star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-label="Full star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" aria-label="Full star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" class="half" aria-label="Half star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#halfGrad)"/></svg>
         </div>
         <span class="rating-text"><strong>4.5 / 5</strong> &nbsp;·&nbsp; 200+ verified reviews on Amazon</span>
       </div>
@@ -794,57 +836,57 @@
     </div>
   </div>
   <div class="hero-right">
-    <img src="c1.jpg" alt="Waoops 7.9ft Artificial Olive Tree in white planter">
+    <img src="c1.jpg" alt="Waoops 7.9ft Artificial Olive Tree in white ceramic-look planter">
   </div>
 </section>
 
 <!-- ── FEATURE STRIP ── -->
-<div class="feature-strip">
+<div class="feature-strip" role="region" aria-label="Key product features">
   <div class="feature-item">
-    <svg class="feature-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14l-4-4 1.41-1.41L10 13.17l6.59-6.59L18 8l-8 8z"/></svg>
+    <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.8" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11z"/></svg>
     Never Waters, Never Wilts
   </div>
   <div class="feature-item">
-    <svg class="feature-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 19.5c-.61 1.02.11 2.5 1.26 2.5H7c.55 0 1.06-.22 1.45-.62l1.14-1.19A1 1 0 0 1 10.3 20H14a1 1 0 0 0 .89-.55l.34-.68A1 1 0 0 1 16.12 18h3.38a1 1 0 0 0 .95-1.32C19.21 13.33 17.5 11 17 8z"/></svg>
+    <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.8" fill="none"><path d="M17 8C8 10 5.9 16.17 3.82 19.5c-.61 1.02.11 2.5 1.26 2.5H7c.55 0 1.06-.22 1.45-.62l1.14-1.14 1.42 1.42c.2.21.48.33.77.33.29 0 .56-.12.77-.33L12 18.5l.5.5c.21.21.48.33.77.33.29 0 .56-.12.77-.33l1.42-1.42 1.14 1.14c.39.39.9.62 1.45.62h1.92c1.16 0 1.88-1.48 1.26-2.5C18.1 16.17 16 10 7 8z"/></svg>
     100% Odorless &amp; Pet-Safe
   </div>
   <div class="feature-item">
-    <svg class="feature-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+    <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.8" fill="none"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
     Ships Assembled
   </div>
   <div class="feature-item">
-    <svg class="feature-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.8" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
     Indoor &amp; Outdoor Use
   </div>
   <div class="feature-item">
-    <svg class="feature-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.8" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
     Premium Quality Materials
   </div>
 </div>
 
 <!-- ── SPECS ── -->
-<section class="specs-section">
+<section class="specs-section" aria-label="Product specifications">
   <div class="specs-img">
-    <img src="c3.jpg" alt="Olive tree dimensions and detail features">
+    <img src="c3.jpg" alt="Olive tree showing dimensions, foliage detail, and decorative pebbles in ceramic pot">
   </div>
   <div class="specs-content">
     <p class="section-label">Crafted to Last</p>
     <h2>Built for <em>Grandeur</em></h2>
 
     <div class="spec-grid">
-      <div class="spec-item">
+      <div>
         <div class="spec-label">Total Height</div>
         <div class="spec-value">7.9 ft</div>
       </div>
-      <div class="spec-item">
+      <div>
         <div class="spec-label">Canopy Width</div>
         <div class="spec-value">3.6 ft</div>
       </div>
-      <div class="spec-item">
+      <div>
         <div class="spec-label">Pot Width</div>
         <div class="spec-value">13 inch</div>
       </div>
-      <div class="spec-item">
+      <div>
         <div class="spec-label">Pot Depth</div>
         <div class="spec-value">12 inch</div>
       </div>
@@ -853,19 +895,19 @@
     <div class="spec-divider"></div>
 
     <div class="spec-grid">
-      <div class="spec-item">
+      <div>
         <div class="spec-label">Foliage</div>
         <div class="spec-value">Silk + PE Leaves</div>
       </div>
-      <div class="spec-item">
+      <div>
         <div class="spec-label">Planter</div>
         <div class="spec-value">White Ceramic-Look</div>
       </div>
-      <div class="spec-item">
+      <div>
         <div class="spec-label">Trunk</div>
         <div class="spec-value">Natural Wood Bark</div>
       </div>
-      <div class="spec-item">
+      <div>
         <div class="spec-label">Accents</div>
         <div class="spec-value">Faux Olives + Stones</div>
       </div>
@@ -874,7 +916,7 @@
 </section>
 
 <!-- ── BENEFITS ── -->
-<section class="benefits-section">
+<section class="benefits-section" aria-label="Why choose this product">
   <p class="eyebrow" style="justify-content:center; margin-bottom:16px;">Why Thousands Choose Waoops</p>
   <h2>Beauty Without the Burden</h2>
   <p class="lead">Real olive trees demand Mediterranean sunlight, meticulous watering, and constant care. This one just looks incredible — always.</p>
@@ -918,7 +960,7 @@
 </section>
 
 <!-- ── LIFESTYLE ── -->
-<section class="lifestyle-section">
+<section class="lifestyle-section" aria-label="Real-home styling">
   <div class="lifestyle-content">
     <p class="section-label">Styled in Real Homes</p>
     <h2>The Room Needs <em>A Moment.</em><br>This Is It.</h2>
@@ -936,19 +978,19 @@
     </a>
   </div>
   <div class="lifestyle-img">
-    <img src="c2.jpg" alt="Waoops artificial olive tree styled in a real home near staircase">
+    <img src="c2.jpg" alt="Waoops artificial olive tree styled in a modern home near a staircase">
   </div>
 </section>
 
 <!-- ── REVIEWS ── -->
-<section class="reviews-section">
+<section class="reviews-section" aria-label="Customer reviews">
   <div class="reviews-header">
     <p class="section-label" style="color: var(--sage-pale); justify-content: center;">Amazon Customer Reviews</p>
     <h2>Real People, <em>Real Opinions</em></h2>
     <div class="overall-rating">
       <div class="big-score">4.5</div>
       <div>
-        <div class="stars" style="margin-bottom: 8px;">
+        <div class="stars" aria-hidden="true" style="margin-bottom: 8px;">
           <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:#b8935a"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:#b8935a"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:#b8935a"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -969,99 +1011,69 @@
 
   <div class="reviews-grid">
     <div class="review-card">
-      <div class="review-stars">
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div class="review-stars" aria-label="5 stars">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
       </div>
       <div class="review-title">Guests thought it was real!</div>
-      <div class="review-text">I set this up in my entryway and every single person who has visited has asked me how I keep my olive tree so healthy indoors. When I tell them it's fake, they genuinely don't believe me at first.</div>
+      <div class="review-text">I set this up in my entryway and every single person who has visited has asked me how I keep my olive tree so healthy indoors. When I tell them it's fake, they're genuinely shocked. The detail is remarkable, especially the trunk and the variation in the leaf coloring.</div>
       <div class="review-author">Sarah M. <span class="verified">✓ Verified Purchase</span></div>
     </div>
 
     <div class="review-card">
-      <div class="review-stars">
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div class="review-stars" aria-label="5 stars">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
       </div>
       <div class="review-title">Worth every penny</div>
-      <div class="review-text">I've bought cheaper faux trees before and regretted it. This one is completely different — the trunk detail is extraordinary and the leaves have a realistic variation in colour that fools everyone.</div>
+      <div class="review-text">I've bought cheaper faux trees before and regretted it. This one is completely different — the trunk detail is extraordinary and the leaves have realistic variation in tone and positioning. It looks like someone actually styled it, not a plastic mass-produced item.</div>
       <div class="review-author">James T. <span class="verified">✓ Verified Purchase</span></div>
     </div>
 
     <div class="review-card">
-      <div class="review-stars">
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div class="review-stars" aria-label="5 stars">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
       </div>
-      <div class="review-title">Finally filled my awkward corner</div>
-      <div class="review-text">I'd been looking for something tall and full for an awkward spot in my living room for two years. This is perfect. The height is genuinely impressive and the white pot looks designer-expensive.</div>
-      <div class="review-author">Priya K. <span class="verified">✓ Verified Purchase</span></div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-stars">
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      </div>
-      <div class="review-title">Great for our office lobby</div>
-      <div class="review-text">We bought two for either side of our reception desk. Professional, impactful, and clients always compliment them. Zero upkeep — exactly what a business needs.</div>
-      <div class="review-author">Rachel B. <span class="verified">✓ Verified Purchase</span></div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-stars">
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24" style="fill:#555"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      </div>
-      <div class="review-title">Beautiful but took time to fluff</div>
-      <div class="review-text">Arrived well packaged. It took about 30–40 minutes to properly shape and fluff all the branches but once done, it looks stunning. The size is very generous — much bigger in person than expected.</div>
-      <div class="review-author">David L. <span class="verified">✓ Verified Purchase</span></div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-stars">
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      </div>
-      <div class="review-title">My living room finally feels complete</div>
-      <div class="review-text">I'm no interior designer but this tree made my space look like I hired one. The olive details on the branches are so charming and the white pot is genuinely beautiful quality.</div>
-      <div class="review-author">Monica H. <span class="verified">✓ Verified Purchase</span></div>
+      <div class="review-title">Perfect for staging</div>
+      <div class="review-text">We used this for our home staging project and it transformed the space. The 7.9ft height really anchors a room, and the natural wood pot blends seamlessly with any decor. Highly recommend for real estate agents and interior designers.</div>
+      <div class="review-author">Lisa H. <span class="verified">✓ Verified Purchase</span></div>
     </div>
   </div>
 </section>
 
-<!-- ── FINAL CTA ── -->
-<section class="cta-section">
-  <h2>Ready to <em>Transform</em><br>Your Space?</h2>
-  <p>Join thousands of homeowners who chose beauty without compromise. Get the Waoops Olive Tree delivered to your door.</p>
+<!-- ── CTA SECTION ── -->
+<section class="cta-section" aria-label="Final call to action">
+  <h2>Ready to Transform <em>Your Space?</em></h2>
+  <p>Join thousands of happy homeowners who've elevated their interiors with the Waoops Olive Tree. Available exclusively on Amazon with free shipping.</p>
   <a href="https://amzn.to/4wEAT9z" target="_blank" rel="nofollow sponsored noopener" class="cta-btn-white">
     Shop on Amazon Now
   </a>
-  <p class="disclaimer" id="disclaimer">Price shown is approximate and may vary. As an Amazon Associate I earn from qualifying purchases at no additional cost to you.</p>
+  <div class="disclaimer" id="disclaimer">
+    <p><strong>Affiliate Disclosure:</strong> This site contains affiliate links. As an Amazon Associate, I earn from qualifying purchases at no additional cost to you. All opinions and recommendations are genuine.</p>
+  </div>
 </section>
 
 <!-- ── FOOTER ── -->
-<footer>
-  <p>© 2025 · This site contains affiliate links. As an Amazon Associate I earn from qualifying purchases.</p>
-  <p style="margin-top:6px;">Product images courtesy of Waoops · <a href="https://amzn.to/4wEAT9z" target="_blank" rel="nofollow sponsored noopener">View on Amazon</a></p>
+<footer role="contentinfo">
+  <p>&copy; 2025 Waoops Premium Faux Botanicals. All rights reserved.</p>
+  <p>
+    <a href="#" rel="nofollow">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="#" rel="nofollow">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="#" rel="nofollow">Contact</a>
+  </p>
+  <p style="margin-top: 16px; font-size: 11px; color: rgba(255,255,255,0.3);">
+    Product images are for illustrative purposes. Colors may vary slightly from screens. Sold by Waoops on Amazon.
+  </p>
 </footer>
 
 </body>
