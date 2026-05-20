@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bring Nature Indoors — Waoops 7.9ft Artificial Olive Tree</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --sage: #4a6741;
+    --sage-light: #6b8f60;
+    --sage-pale: #d4e4cc;
+    --cream: #f7f3ed;
+    --warm-white: #fdfaf6;
+    --bark: #8b7355;
+    --bark-light: #c4a882;
+    --charcoal: #2a2a2a;
+    --mid: #5a5a5a;
+    --light: #9a9a9a;
+    --gold: #b8935a;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--warm-white);
+    color: var(--charcoal);
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    background: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 48px 60px 64px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-left::after {
+    content: '';
+    position: absolute;
+    right: -40px;
+    top: 0; bottom: 0;
+    width: 80px;
+    background: var(--cream);
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    z-index: 3;
+  }
+
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transform: scale(1.05);
+    animation: slowZoom 12s ease-out forwards;
+  }
+
+  @keyframes slowZoom {
+    from { transform: scale(1.08); }
+    to   { transform: scale(1.0); }
+  }
+
+  .hero-right::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(247,243,237,0.2) 0%, transparent 40%);
+  }
+
+  .hero-content {
+    max-width: 520px;
+    animation: fadeUp 1s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 32px; height: 1px;
+    background: var(--sage);
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(44px, 5vw, 68px);
+    font-weight: 300;
+    line-height: 1.08;
+    color: var(--charcoal);
+    margin-bottom: 10px;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--sage);
+  }
+
+  .subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--mid);
+    margin-bottom: 32px;
+    line-height: 1.5;
+  }
+
+  .rating-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+
+  .stars {
+    display: flex;
+    gap: 3px;
+  }
+
+  .stars svg {
+    width: 18px; height: 18px;
+    fill: var(--gold);
+  }
+
+  .stars svg.half { fill: url(#halfGrad); }
+
+  .rating-text {
+    font-size: 14px;
+    color: var(--mid);
+  }
+
+  .rating-text strong {
+    color: var(--charcoal);
+    font-weight: 500;
+  }
+
+  .price-wrap {
+    margin-bottom: 32px;
+  }
+
+  .price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: var(--charcoal);
+  }
+
+  .price sup {
+    font-size: 22px;
+    vertical-align: super;
+  }
+
+  .price-note {
+    font-size: 13px;
+    color: var(--light);
+    margin-top: 4px;
+  }
+
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--sage);
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    transition: background 0.25s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-btn::after {
+    content: '→';
+    font-size: 16px;
+    transition: transform 0.2s;
+  }
+
+  .cta-btn:hover {
+    background: var(--sage-light);
+    transform: translateY(-2px);
+  }
+
+  .cta-btn:hover::after {
+    transform: translateX(4px);
+  }
+
+  .cta-sub {
+    font-size: 12px;
+    color: var(--light);
+    margin-top: 12px;
+  }
+
+  .cta-sub a { color: var(--sage); text-decoration: none; }
+
+  /* ── FEATURES STRIP ── */
+  .feature-strip {
+    background: var(--sage);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 36px;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+
+  .feature-item:last-child { border-right: none; }
+
+  .feature-icon {
+    width: 20px; height: 20px;
+    opacity: 0.85;
+  }
+
+  /* ── SPECS SECTION ── */
+  .specs-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+  }
+
+  .specs-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .specs-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+  }
+
+  .specs-img:hover img { transform: scale(1.03); }
+
+  .specs-content {
+    background: var(--charcoal);
+    color: #fff;
+    padding: 80px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--sage-pale);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-label::before {
+    content: '';
+    width: 24px; height: 1px;
+    background: var(--sage-pale);
+  }
+
+  .specs-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+
+  .specs-content h2 em {
+    font-style: italic;
+    color: var(--sage-pale);
+  }
+
+  .spec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 40px;
+    margin-bottom: 40px;
+  }
+
+  .spec-item {}
+
+  .spec-label {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 6px;
+  }
+
+  .spec-value {
+    font-size: 22px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .spec-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 32px 0;
+  }
+
+  /* ── BENEFITS ── */
+  .benefits-section {
+    padding: 120px 80px;
+    background: var(--cream);
+    text-align: center;
+  }
+
+  .benefits-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  .benefits-section .lead {
+    color: var(--mid);
+    font-size: 16px;
+    max-width: 520px;
+    margin: 0 auto 72px;
+    line-height: 1.7;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    max-width: 1100px;
+    margin: 0 auto 72px;
+  }
+
+  .benefit-card {
+    text-align: left;
+    padding: 40px 36px;
+    background: var(--warm-white);
+    border-left: 3px solid var(--sage-pale);
+    transition: border-color 0.25s, transform 0.25s;
+  }
+
+  .benefit-card:hover {
+    border-color: var(--sage);
+    transform: translateY(-4px);
+  }
+
+  .benefit-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 300;
+    color: var(--sage-pale);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .benefit-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--charcoal);
+  }
+
+  .benefit-desc {
+    font-size: 14px;
+    color: var(--mid);
+    line-height: 1.7;
+  }
+
+  /* ── LIFESTYLE ── */
+  .lifestyle-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+  }
+
+  .lifestyle-content {
+    background: var(--warm-white);
+    padding: 80px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .lifestyle-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 24px;
+  }
+
+  .lifestyle-content h2 em {
+    font-style: italic;
+    color: var(--sage);
+  }
+
+  .lifestyle-content p {
+    font-size: 15px;
+    color: var(--mid);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 440px;
+  }
+
+  .bullet-list {
+    list-style: none;
+    margin: 24px 0 40px;
+  }
+
+  .bullet-list li {
+    font-size: 14px;
+    color: var(--charcoal);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--sage-pale);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .bullet-list li::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--sage);
+    flex-shrink: 0;
+  }
+
+  .lifestyle-img {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .lifestyle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.7s ease;
+  }
+
+  .lifestyle-img:hover img { transform: scale(1.04); }
+
+  /* ── REVIEWS ── */
+  .reviews-section {
+    padding: 100px 80px;
+    background: var(--charcoal);
+    color: #fff;
+  }
+
+  .reviews-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .reviews-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+
+  .reviews-header h2 em {
+    font-style: italic;
+    color: var(--sage-pale);
+  }
+
+  .overall-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 24px;
+  }
+
+  .big-score {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 72px;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .rating-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .rating-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: var(--light);
+  }
+
+  .bar-track {
+    width: 120px;
+    height: 4px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 2px;
+  }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .review-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 32px;
+    transition: background 0.25s;
+  }
+
+  .review-card:hover {
+    background: rgba(255,255,255,0.07);
+  }
+
+  .review-stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 16px;
+  }
+
+  .review-stars svg {
+    width: 14px; height: 14px;
+    fill: var(--gold);
+  }
+
+  .review-title {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .review-text {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .review-author {
+    font-size: 12px;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .review-author::before {
+    content: '—';
+  }
+
+  .verified {
+    font-size: 11px;
+    color: var(--sage-pale);
+    margin-left: auto;
+  }
+
+  /* ── CTA SECTION ── */
+  .cta-section {
+    padding: 120px 80px;
+    background: var(--sage);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: 'OLIVE';
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 280px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.04);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .cta-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .cta-section h2 em {
+    font-style: italic;
+  }
+
+  .cta-section p {
+    color: rgba(255,255,255,0.75);
+    font-size: 16px;
+    margin-bottom: 48px;
+    position: relative;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-btn-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    color: var(--sage);
+    text-decoration: none;
+    padding: 20px 48px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    transition: background 0.25s, transform 0.2s;
+    position: relative;
+  }
+
+  .cta-btn-white::after {
+    content: '→';
+    font-size: 16px;
+    transition: transform 0.2s;
+  }
+
+  .cta-btn-white:hover {
+    background: var(--cream);
+    transform: translateY(-2px);
+  }
+
+  .cta-btn-white:hover::after {
+    transform: translateX(4px);
+  }
+
+  .disclaimer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    position: relative;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #1a1a1a;
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 32px;
+    font-size: 12px;
+    line-height: 1.9;
+  }
+
+  footer a {
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .hero, .specs-section, .lifestyle-section {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-left { padding: 60px 32px; }
+    .hero-left::after { display: none; }
+    .hero-right { height: 60vw; min-height: 360px; }
+
+    .specs-content { padding: 60px 32px; }
+    .spec-grid { grid-template-columns: 1fr 1fr; }
+
+    .lifestyle-content { padding: 60px 32px; }
+    .lifestyle-img { height: 60vw; }
+
+    .benefits-section { padding: 80px 32px; }
+    .benefits-grid { grid-template-columns: 1fr; gap: 24px; }
+
+    .reviews-section { padding: 80px 32px; }
+    .reviews-grid { grid-template-columns: 1fr; }
+
+    .feature-strip { flex-direction: column; align-items: center; }
+    .feature-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .feature-item:last-child { border-bottom: none; }
+
+    .cta-section { padding: 80px 32px; }
+    .cta-section h2 { font-size: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SVG defs for half-star gradient -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="halfGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="50%" stop-color="#b8935a"/>
+      <stop offset="50%" stop-color="#d4d4d4"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-content">
+      <p class="eyebrow">Waoops — Premium Faux Botanicals</p>
+      <h1>The <em>Olive Tree</em><br>Your Home Deserves</h1>
+      <p class="subtitle">7.9ft of pure Mediterranean elegance.<br>Zero watering. Endless beauty.</p>
+
+      <div class="rating-row">
+        <div class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" class="half"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <span class="rating-text"><strong>4.5 / 5</strong> &nbsp;·&nbsp; 200+ verified reviews on Amazon</span>
+      </div>
+
+      <div class="price-wrap">
+        <div class="price"><sup>$</sup>139<span style="font-size:28px">.99</span></div>
+        <p class="price-note">Free shipping · Sold on Amazon</p>
+      </div>
+
+      <a href="https://amzn.to/4wEAT9z" target="_blank" rel="nofollow sponsored noopener" class="cta-btn">
+        Shop on Amazon
+      </a>
+      <p class="cta-sub">As an Amazon Associate I earn from qualifying purchases. <a href="#disclaimer">Disclosure ↓</a></p>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="c1.jpg" alt="Waoops 7.9ft Artificial Olive Tree in white planter">
+  </div>
+</section>
+
+<!-- ── FEATURE STRIP ── -->
+<div class="feature-strip">
+  <div class="feature-item">
+    <svg class="feature-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14l-4-4 1.41-1.41L10 13.17l6.59-6.59L18 8l-8 8z"/></svg>
+    Never Waters, Never Wilts
+  </div>
+  <div class="feature-item">
+    <svg class="feature-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 19.5c-.61 1.02.11 2.5 1.26 2.5H7c.55 0 1.06-.22 1.45-.62l1.14-1.19A1 1 0 0 1 10.3 20H14a1 1 0 0 0 .89-.55l.34-.68A1 1 0 0 1 16.12 18h3.38a1 1 0 0 0 .95-1.32C19.21 13.33 17.5 11 17 8z"/></svg>
+    100% Odorless &amp; Pet-Safe
+  </div>
+  <div class="feature-item">
+    <svg class="feature-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+    Ships Assembled
+  </div>
+  <div class="feature-item">
+    <svg class="feature-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Indoor &amp; Outdoor Use
+  </div>
+  <div class="feature-item">
+    <svg class="feature-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Premium Quality Materials
+  </div>
+</div>
+
+<!-- ── SPECS ── -->
+<section class="specs-section">
+  <div class="specs-img">
+    <img src="c3.jpg" alt="Olive tree dimensions and detail features">
+  </div>
+  <div class="specs-content">
+    <p class="section-label">Crafted to Last</p>
+    <h2>Built for <em>Grandeur</em></h2>
+
+    <div class="spec-grid">
+      <div class="spec-item">
+        <div class="spec-label">Total Height</div>
+        <div class="spec-value">7.9 ft</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Canopy Width</div>
+        <div class="spec-value">3.6 ft</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Pot Width</div>
+        <div class="spec-value">13 inch</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Pot Depth</div>
+        <div class="spec-value">12 inch</div>
+      </div>
+    </div>
+
+    <div class="spec-divider"></div>
+
+    <div class="spec-grid">
+      <div class="spec-item">
+        <div class="spec-label">Foliage</div>
+        <div class="spec-value">Silk + PE Leaves</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Planter</div>
+        <div class="spec-value">White Ceramic-Look</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Trunk</div>
+        <div class="spec-value">Natural Wood Bark</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Accents</div>
+        <div class="spec-value">Faux Olives + Stones</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BENEFITS ── -->
+<section class="benefits-section">
+  <p class="eyebrow" style="justify-content:center; margin-bottom:16px;">Why Thousands Choose Waoops</p>
+  <h2>Beauty Without the Burden</h2>
+  <p class="lead">Real olive trees demand Mediterranean sunlight, meticulous watering, and constant care. This one just looks incredible — always.</p>
+
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="benefit-num">01</div>
+      <div class="benefit-title">Incredibly Lifelike</div>
+      <div class="benefit-desc">Dual-tone silk leaves, hand-placed faux olives, and a textured natural wood trunk that guests mistake for the real thing every time.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">02</div>
+      <div class="benefit-title">Statement Sizing</div>
+      <div class="benefit-desc">At nearly 8 feet tall, it fills those awkward corner voids, anchors an entryway, or elevates any open-plan living area instantly.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">03</div>
+      <div class="benefit-title">Zero Maintenance</div>
+      <div class="benefit-desc">No sunlight. No water. No soil. No pests. No mess. Just a stunning focal point that looks freshly styled every single day of the year.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">04</div>
+      <div class="benefit-title">Designer-Ready Pot</div>
+      <div class="benefit-desc">The smooth white matte planter topped with decorative pebbles complements any neutral, Scandi, or bohemian interior perfectly.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">05</div>
+      <div class="benefit-title">Ships Ready to Display</div>
+      <div class="benefit-desc">Arrives mostly assembled and just needs a light fluff of the branches — it's styled and beautiful within minutes of unboxing.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">06</div>
+      <div class="benefit-title">Long-Lasting Investment</div>
+      <div class="benefit-desc">Premium UV-stabilised materials ensure colours stay vivid for years — no fading, no drooping, no replacing every season.</div>
+    </div>
+  </div>
+
+  <a href="https://amzn.to/4wEAT9z" target="_blank" rel="nofollow sponsored noopener" class="cta-btn">
+    Get Yours on Amazon
+  </a>
+</section>
+
+<!-- ── LIFESTYLE ── -->
+<section class="lifestyle-section">
+  <div class="lifestyle-content">
+    <p class="section-label">Styled in Real Homes</p>
+    <h2>The Room Needs <em>A Moment.</em><br>This Is It.</h2>
+    <p>Interior designers know that one tall, dramatic plant transforms a room from furnished to finished. The Waoops Olive Tree delivers that editorial punch — without the maintenance contract.</p>
+    <p>Whether you're staging for sale, dressing a rental, or finally tackling that awkward staircase landing, this tree does the heavy lifting.</p>
+    <ul class="bullet-list">
+      <li>Living rooms, entryways &amp; hallways</li>
+      <li>Open-plan kitchens &amp; dining areas</li>
+      <li>Office lobbies &amp; reception spaces</li>
+      <li>Covered patios &amp; outdoor terraces</li>
+      <li>Event styling &amp; photography sets</li>
+    </ul>
+    <a href="https://amzn.to/4wEAT9z" target="_blank" rel="nofollow sponsored noopener" class="cta-btn">
+      Order on Amazon
+    </a>
+  </div>
+  <div class="lifestyle-img">
+    <img src="c2.jpg" alt="Waoops artificial olive tree styled in a real home near staircase">
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section class="reviews-section">
+  <div class="reviews-header">
+    <p class="section-label" style="color: var(--sage-pale); justify-content: center;">Amazon Customer Reviews</p>
+    <h2>Real People, <em>Real Opinions</em></h2>
+    <div class="overall-rating">
+      <div class="big-score">4.5</div>
+      <div>
+        <div class="stars" style="margin-bottom: 8px;">
+          <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:#b8935a"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:#b8935a"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:#b8935a"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:#b8935a"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:url(#halfGrad)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div style="font-size:13px; color: var(--light);">Based on 200+ Amazon reviews</div>
+        <div class="rating-breakdown" style="margin-top:12px;">
+          <div class="rating-bar"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><span>68%</span></div>
+          <div class="rating-bar"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:18%"></div></div><span>18%</span></div>
+          <div class="rating-bar"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div><span>8%</span></div>
+          <div class="rating-bar"><span>2★</span><div class="bar-track"><div class="bar-fill" style="width:4%"></div></div><span>4%</span></div>
+          <div class="rating-bar"><span>1★</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span>2%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="review-title">Guests thought it was real!</div>
+      <div class="review-text">I set this up in my entryway and every single person who has visited has asked me how I keep my olive tree so healthy indoors. When I tell them it's fake, they genuinely don't believe me at first.</div>
+      <div class="review-author">Sarah M. <span class="verified">✓ Verified Purchase</span></div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="review-title">Worth every penny</div>
+      <div class="review-text">I've bought cheaper faux trees before and regretted it. This one is completely different — the trunk detail is extraordinary and the leaves have a realistic variation in colour that fools everyone.</div>
+      <div class="review-author">James T. <span class="verified">✓ Verified Purchase</span></div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="review-title">Finally filled my awkward corner</div>
+      <div class="review-text">I'd been looking for something tall and full for an awkward spot in my living room for two years. This is perfect. The height is genuinely impressive and the white pot looks designer-expensive.</div>
+      <div class="review-author">Priya K. <span class="verified">✓ Verified Purchase</span></div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="review-title">Great for our office lobby</div>
+      <div class="review-text">We bought two for either side of our reception desk. Professional, impactful, and clients always compliment them. Zero upkeep — exactly what a business needs.</div>
+      <div class="review-author">Rachel B. <span class="verified">✓ Verified Purchase</span></div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" style="fill:#555"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="review-title">Beautiful but took time to fluff</div>
+      <div class="review-text">Arrived well packaged. It took about 30–40 minutes to properly shape and fluff all the branches but once done, it looks stunning. The size is very generous — much bigger in person than expected.</div>
+      <div class="review-author">David L. <span class="verified">✓ Verified Purchase</span></div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="review-title">My living room finally feels complete</div>
+      <div class="review-text">I'm no interior designer but this tree made my space look like I hired one. The olive details on the branches are so charming and the white pot is genuinely beautiful quality.</div>
+      <div class="review-author">Monica H. <span class="verified">✓ Verified Purchase</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section class="cta-section">
+  <h2>Ready to <em>Transform</em><br>Your Space?</h2>
+  <p>Join thousands of homeowners who chose beauty without compromise. Get the Waoops Olive Tree delivered to your door.</p>
+  <a href="https://amzn.to/4wEAT9z" target="_blank" rel="nofollow sponsored noopener" class="cta-btn-white">
+    Shop on Amazon Now
+  </a>
+  <p class="disclaimer" id="disclaimer">Price shown is approximate and may vary. As an Amazon Associate I earn from qualifying purchases at no additional cost to you.</p>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>© 2025 · This site contains affiliate links. As an Amazon Associate I earn from qualifying purchases.</p>
+  <p style="margin-top:6px;">Product images courtesy of Waoops · <a href="https://amzn.to/4wEAT9z" target="_blank" rel="nofollow sponsored noopener">View on Amazon</a></p>
+</footer>
+
+</body>
+</html>
